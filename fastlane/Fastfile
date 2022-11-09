@@ -1,0 +1,63 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    teams_url = "https://kpitechservices1.webhook.office.com/webhookb2/f12923b5-4f97-4fc8-9a0b-36d927126820@d25f24a2-3b74-40e5-a5d0-08aa326c7b15/IncomingWebhook/0997bbf2e29a4eafb2bd9c900e157d58/e30505cc-3590-4f8a-8dfe-c562d4acb000"
+    teams(
+    title: "Fastlane says hello",
+    message: "App successfully released!",
+     facts:[
+      {
+        "name"=>"Platform",
+        "value"=>"Android"
+      },
+      {
+        "name"=>"Lane",
+        "value"=>"android internal"
+      }
+    ],
+    teams_url: teams_url
+  )
+  end
+
+  desc "Build"
+  lane :build do
+    test
+    gradle(task: "clean assembleRelease")
+  end
+
+
+  desc "Submit a new Beta Build to Firebase App Distribution"
+  lane :beta do
+    build
+
+    firebase_app_distribution(
+      app: "1:643434836127:android:ddfee3ec55bcf1cfc6f2aa",
+      groups: "group-two",
+      release_notes: "Lots of amazing new features to test out!"
+  )
+ end
+
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end

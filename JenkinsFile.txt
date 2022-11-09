@@ -1,0 +1,9 @@
+#! groovy
+
+pipeline {
+    agent any
+    stages {
+      stage('${Stage_Name}') {
+        }
+    }
+}
