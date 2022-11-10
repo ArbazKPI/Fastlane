@@ -9,9 +9,11 @@ pipeline {
   steps {
     echo "Setup"
 
-    sh "sudo -S apt-get install build-essential"
+    sh "su - Arbaz -p KPITECH"
 
-    sh "gem install bundler"
+    sh "sudo apt-get install build-essential"
+
+    sh "sudo gem install bundler"
 
     sh "sudo bundle install"
 
