@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-    sh "sudo -s apt-get install build-essential"
+    sh "sudo -S apt-get install build-essential"
 
     sh "gem install bundler"
 
