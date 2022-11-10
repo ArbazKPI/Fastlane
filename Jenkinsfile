@@ -14,16 +14,9 @@ pipeline {
     sh "bundle config set --local path 'vendor/bundle'"
     
     sh "bundle install"
-  }
-}
 
-
-stage('Build') {
-  steps {
-    echo "Building"
     sh "bundle exec fastlane beta"
   }
 }
-
 }
 }
