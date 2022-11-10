@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-        sh su - Arbaz <<! >/dev/null 2>&1
+        sh "su - Arbaz <<! >/dev/null 2>&1
         KPITECH
         
         gem install bundler
@@ -20,7 +20,7 @@ pipeline {
 
         bundle exec fastlane beta
 
-        !
+        !"
   }
 }
 }
