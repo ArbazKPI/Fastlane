@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-    sh sudo -i
+    
     // Install bundler in order to use fastlane
     sh "gem install bundler"
     // set the local path for bundles in vendor/bundle
