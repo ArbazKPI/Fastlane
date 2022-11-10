@@ -13,6 +13,7 @@ pipeline {
     // set the local path for bundles in vendor/bundle
     sh "bundle config set --local path 'vendor/bundle'"
     
+    sh "bundle install"
   }
 }
 
