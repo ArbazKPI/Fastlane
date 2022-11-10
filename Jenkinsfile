@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-        sh "su - Arbaz -p KPITECH"
+        sh "su - Arbaz -p KPITECH --login"
         
         
         sh "gem install bundler"
