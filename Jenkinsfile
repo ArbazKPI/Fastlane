@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-
+    sh "bundle install"
 
     sh "bundle exec fastlane beta"
   }
