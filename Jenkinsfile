@@ -9,7 +9,7 @@ pipeline {
   steps {
     echo "Setup"
 
-    sh "su - Arbaz -p KPITECH"
+    sh "su - Arbaz"
 
     sh "sudo apt-get install build-essential"
 
