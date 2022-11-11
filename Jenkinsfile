@@ -9,7 +9,7 @@ pipeline {
   steps {
 
     //change permission of gradlew and Gemfile
-                sh "chmod +x fastlane-1/Jenkinsfile"
+                sh "chmod +x Jenkinsfile"
                 //sh "chmod +x Gemfile"
 
                 
