@@ -18,7 +18,7 @@ pipeline {
                 //sh "chmod +x Gemfile"
                 sh "chmod +x gradlew"
 
-                sh "chmod +w /var/lib"
+                sh "chmod -R a+X /var/lib"
 
                 
                 //build and upload to firebase
