@@ -15,7 +15,7 @@ pipeline {
 
             
 
-                sh "echo "Root_password" | sudo -S sleep 1 && sudo su - Arbaz"
+                sh "echo "${Root_password}"| sudo -S sleep 1 && sudo su - Arbaz"
                 sh "bundle install"
 
     //change permission of gradlew and Gemfile
