@@ -8,6 +8,9 @@ pipeline {
     stage('Setup') {
   steps {
 
+                sh "su - root"
+                sh "chmod o+w /root"
+
                 sh "bundle install"
 
     //change permission of gradlew and Gemfile
