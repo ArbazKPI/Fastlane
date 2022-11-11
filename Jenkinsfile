@@ -3,16 +3,18 @@
 pipeline {
     agent any
 
-    stages{
-
-    stage('Setup') {
-  steps {
-
     environment {
 
       Root_password = 'KPITECH'
     }
 
+
+    stages{
+
+    stage('Setup') {
+  steps {
+
+    
             
 
                 sh "echo "${Root_password}"| sudo -S sleep 1 && sudo su - Arbaz"
