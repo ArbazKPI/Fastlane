@@ -3,10 +3,7 @@
 pipeline {
     agent any
 
-    environment {
-
-      Root_password = 'KPITECH'
-    }
+    
 
 
     stages{
@@ -17,7 +14,13 @@ pipeline {
     
             
 
-                sh "echo "${Root_password}" | sudo -S su - Arbaz"
+                sh "expect -c '
+                     log_user 0
+                     spawn /usr/bin/sudo su - Arbaz
+                     expect "*: "
+                     send "KPITECH\n"
+                     interact
+                     '"
                 sh "bundle install"
 
     //change permission of gradlew and Gemfile
