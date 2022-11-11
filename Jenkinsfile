@@ -8,8 +8,8 @@ pipeline {
     stage('Setup') {
   steps {
 
-                sh "su - root"
-                sh "chmod o+w /root"
+                sh "sudo -i"
+                
 
                 sh "bundle install"
 
