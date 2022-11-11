@@ -8,7 +8,14 @@ pipeline {
     stage('Setup') {
   steps {
 
-                sh "echo "KPITECH" | sudo -S su 'Arbaz'"
+    environment {
+
+      Root_password = 'KPITECH'
+    }
+
+            
+
+                sh "echo "Root_password" | sudo -S sleep 1 && sudo su - Arbaz"
                 sh "bundle install"
 
     //change permission of gradlew and Gemfile
