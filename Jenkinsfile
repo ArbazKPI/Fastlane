@@ -11,17 +11,7 @@ pipeline {
     stage('Setup') {
   steps {
 
-    
-            
-
-                sh "expect -c "
-                     log_user 0
-                     spawn /usr/bin/sudo su - Arbaz
-                     expect "*: "
-                     send "KPITECH"
-                     interact
-                     ""
-                sh "bundle install"
+               sh "bundle install"
 
     //change permission of gradlew and Gemfile
                 sh "chmod +x Jenkinsfile"
