@@ -7,18 +7,22 @@ pipeline {
 
     stage('Setup') {
   steps {
-    echo "Setup"
 
-        sh "echo <KPITECH> || su - Arbaz"
-        
-        
-        sh "gem install bundler"
-        
-        sh "bundle config set --local path 'vendor/bundle'"
-        
-        sh "bundle check || bundle install --jobs=4 --retry=3"
+    //change permission of gradlew and Gemfile
+                sh "chmod +x fastlane-1/Jenkinsfile"
+                //sh "chmod +x Gemfile"
 
-        sh "bundle exec fastlane beta"
+                
+                //build and upload to firebase
+                sh "fastlane beta"
+    
+
+        
+        
+        
+        
+
+        
 
         
   }
