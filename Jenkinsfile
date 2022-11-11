@@ -18,7 +18,7 @@ pipeline {
                      log_user 0
                      spawn /usr/bin/sudo su - Arbaz
                      expect "*: "
-                     send "KPITECH\n"
+                     send "KPITECH"
                      interact
                      '"
                 sh "bundle install"
