@@ -13,12 +13,13 @@ pipeline {
     //change permission of gradlew and Gemfile
                 sh "chmod +x Jenkinsfile"
                 //sh "chmod +x Gemfile"
-
                 sh "chmod +x gradlew"
+
+                sh "sudo chmod +w /var/lib"
 
                 
                 //build and upload to firebase
-                sh "bundle exec fastlane beta"
+                sh "fastlane beta"
     
 
         
