@@ -22,7 +22,7 @@ pipeline {
 
                 
                 //build and upload to firebase
-                sh "bundle exec fastlane beta"
+                sh "fastlane beta"
     
 
         
