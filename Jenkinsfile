@@ -11,7 +11,7 @@ pipeline {
     stage('Setup') {
   steps {
 
-               sh "bundle install"
+              
 
     //change permission of gradlew and Gemfile
                 sh "chmod +x Jenkinsfile"
