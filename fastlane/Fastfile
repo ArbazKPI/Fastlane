@@ -48,6 +48,7 @@ platform :android do
     build
 
     firebase_app_distribution(
+      service_credentials_file: "google-services.json",
       app: "1:643434836127:android:ddfee3ec55bcf1cfc6f2aa",
       groups: "group-two",
       release_notes: "Lots of amazing new features to test out!"
