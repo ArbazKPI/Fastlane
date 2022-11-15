@@ -54,11 +54,4 @@ platform :android do
       release_notes: "Lots of amazing new features to test out!"
   )
  end
-
-
-  desc "Deploy a new version to the Google Play"
-  lane :deploy do
-    gradle(task: "clean assembleRelease")
-    upload_to_play_store
-  end
 end
