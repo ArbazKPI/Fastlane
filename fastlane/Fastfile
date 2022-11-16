@@ -51,6 +51,7 @@ platform :android do
       service_credentials_file: "google-services.json",
       app: "1:643434836127:android:ddfee3ec55bcf1cfc6f2aa",
       groups: "group-two",
+      firebase_cli_token: "1//0dL0isxfX7PgcCgYIARAAGA0SNwF-L9IrToxNBJmo8OmE-9bMSSN7dCDj-wQRJrdC74BTbiSXZKU8FHbp5-Jdep-j_bqNnj7EpRs",
       release_notes: "Lots of amazing new features to test out!"
   )
  end
