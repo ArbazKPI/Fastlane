@@ -15,16 +15,7 @@
       "oauth_client": [
         {
           "client_id": "643434836127-ktfemfbmtubc217jlbu197ufcdfov5dk.apps.googleusercontent.com",
-          "type": "service_account",
-          "project_id": "rwmagic8ball-bc28c",
-          "private_key_id": "0da53902a026d30635ecaf4bcc27fe6aacba8c91",
-          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5x/10yGBXV7cY\nDkP4Z1ouJPWCJk287FX766v95fsp3IflkgRPY/Ys8l8P19dlzrbe7LQXtcbYITZ+\nLz1tVYxM5N1PCKtf5auJvNFBv9lwAHXw3425m6BEtYT+IWpUnU6D2BGBU4jVIGQh\nqdfQBwXUjgooHMLpHNwJW0+BR+P2dnw9KpuTWHxC4OeS5WM6WlBGMUbmtc+bmv8C\n7iorksIKd5LEYX4NBPofrLS1q5DVRwOl+ZDAfx2uS06U8T7yo6H9N4pOJUs5lBPf\nshtDEQ8p0NNqS7dsVCxZWOgCJK1mZ8+LkpfrfwnBjKaNT3LUC+yv9pG6euNuCIAT\n4mb6sLcLAgMBAAECggEAU4nr3T8bHztYoA8OHl1vDi/dW+RYcXr+YRUE1ls7eQPq\n8d6aZI6pDGYCPBANEgEFdzGN+9ln7BjnNY+NeiQNPihtoZPe5/TREVMf74ZSwova\nfPExfARQaYUMI/AnrZu8ygl3OaWz8k4p6H9EhY0a4IzsYUQpmwQ4p1ZxZktK5TB0\nt4V1z4eIOaCHPWBLV7o8LiajsAycLS7pKlV8g5ebxqNve6W3C/7lmNeWZoTZkGSY\nU3xmDh3fsNO9Eb/KxxS2GL1e8EDRRohmgheJzWoC9VUTTn1npJkY4GQWG62P3sWh\nChbDMsKa/kVx0WGJV6Q2n4MvlxPJ85nP0GlYrAidKQKBgQD/NC9JaSWrhwaN0p0U\nsHmg2P8/YNhoJonP1swR6bgFYrIcQ/xB9IpXXHHNKbNHAg7jg6gHmhV0Km2hy7CD\nSH9zUdjDgCKAGKweHYwlkkl3E4KgvgiAyuzior/bap6YYw3t2G8ZbQmDSiGBIt8F\n/KqoIqza+w1Dr7SCQF7RI1dRowKBgQC6XFyiM74S2Cytjg7+JSFQBwi94cvWUC+Z\nPObqjxJX3gPgp8NSRqIfGwKVu27lF+1hkVplZPoMslMHHy9zPQDCfcS0DYlNSmyA\nMHai5mbGWuxht2xmwq93z4ebFf/4+jd++Zz8vb7FenNpOAsIlFIRUrEZxbf3dfw5\nQqhjCERreQKBgDSN0o8TkCZakAb0sFRqYyG0jhvHHcmU5hxe53do4fR59qPLfE84\nxKRo7SaKx9h/nAFOQ3QNTw21Dw6am6btbxGYcUMRSAmJCyjIfOvfzDExW10uxSGA\nqHejfE77Dd3jyCKKx5Y81hCrW2r0e2kINzyYp3AQ8xJVRJ7uEpiO5pRxAoGAITXa\ncDFmWvdZJuic9V9qi1dlkGkPqTaK9PTsdbpfW3c+G6fp39ykgYSPtl07iunzrKJ5\niH4xLVgOAcPl8dRaMU62YhvTbwmnQkTgr3D9ubV0UImecMWa/W/nS5TlE9qLTz5u\nYn/x4kFLFeId3T6JTXr+AojAmwHUm+OsHFHZ14kCgYEA3OjxhxmtI5bVa0B0LcaW\nuP2gNlLWaKlz56GZYhWbxdmd0pKfwQi/Rirp6noEinUZQDFMGDWilLS2VdtnpPRz\nK/h1r7HKuooUg2Jv8qjkZEBZEXARqYAV1iKRouQC05uZ5nr4y62xHFm4/nTSDVeZ\nvHYu5Z2+h+ZJlhcl697pkgA=\n-----END PRIVATE KEY-----\n",
           "client_email": "firebase@rwmagic8ball-bc28c.iam.gserviceaccount.com",
-          "client_id": "110674863832654216917",
-          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-          "token_uri": "https://oauth2.googleapis.com/token",
-          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase%40rwmagic8ball-bc28c.iam.gserviceaccount.com"
           "client_type": 3
         }
       ],
